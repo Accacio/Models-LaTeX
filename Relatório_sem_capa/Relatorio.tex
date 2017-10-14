@@ -1,0 +1,32 @@
+
+
+\documentclass[11pt,a4paper]{articlewithlogo}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+%\usepackage[français]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{{Figuras/}}
+\usepackage{blindtext}
+\newif\ifdebug
+\newcommand\todo[1]{\ifdebug {\color{red}#1}\fi}
+\debugfalse
+
+\logo{logos/minerva2.png}{20mm}
+\title{•}
+\author{Rafael Accácio}
+\teacher{•}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+
+\bibliographystyle{plain}
+\bibliography{bibliografia}
+\end{document}

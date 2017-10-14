@@ -1,0 +1,11 @@
+Título e subtítulo em preamble.tex
+Nome de alunos e professor em titlepage.tex 
+
+clean_latex.bat Limpa os arquivos criados pelo latex
+
+Colocar figuras dentro da pasta Figuras e para colocar 
+as figuras no latex utilisar latexfigfolder digitar 
+nome da pasta e opção h ou H (preferência por H)
+
+Obs.: Não colocar acento nem espaço no nome de figuras nem pastas
+pois labels são feitos automaticamente.

@@ -1,0 +1,47 @@
+\documentclass[a4paper,twoside]{articlewithlogo}
+
+\input{preamble.tex}
+\input{glossaires_et_symb.tex}
+
+\makeindex
+%\final
+\draft
+\begin{document}
+
+\large
+\renewcommand{\figurename}{Figure}
+
+\input{titlepage.tex}
+\newpage{ \pagestyle{empty} \qquad\newpage}
+%\addtocounter{enumi}{-1}
+\conteudo
+\newpage
+\printglossary[type=\acronymtype,title=Liste des Acronymes]
+\phantomsection\addcontentsline{toc}{section}{Liste des Acronymes}
+\newpage 
+\printglossary[title=Glossaire]
+\phantomsection\addcontentsline{toc}{section}{Glossaire}
+\newpage
+
+
+
+
+
+%Appendices
+%\newpage
+%\begin{appendices}
+%	\input{Appendices/programmes}
+%\end{appendices}
+
+
+\newpage
+\listoftables
+\phantomsection\addcontentsline{toc}{section}{Liste des tableaux} %
+\newpage
+\listoffigures
+\phantomsection\addcontentsline{toc}{section}{Table des figures}
+\newpage
+\bibliographystyle{plain}
+\bibliography{bibliografia}
+
+\end{document}
