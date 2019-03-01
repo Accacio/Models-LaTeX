@@ -1,0 +1,333 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{casual}
+\moderncvcolor{green}
+\usepackage[portuguese,english]{babel}
+\usepackage{lipsum}
+\usepackage{genealogytree}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+% https://en.wikibooks.org/wiki/LaTeX/Page_Layout
+% \usepackage{showframe}
+\usepackage[top=0.5in, bottom=1.in, left=1.25in, right=1.25in]{geometry}
+% \usepackage[scale=0.7]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\addtolength{\footskip}{20pt}
+
+\newif\ifportuguese
+\newif\iffrench
+\newif\ifenglish
+
+\newcommand{\portuguese}{\portuguesetrue \frenchfalse \englishfalse}
+\newcommand{\french}{\frenchtrue \portuguesefalse \englishfalse}
+\newcommand{\english}{\englishtrue \frenchfalse \portuguesefalse}
+
+\portuguese
+% \english
+% \french
+
+\newcommand\ml[3]{
+  \ifenglish {#1}\fi
+  \ifportuguese {#2}\fi
+  \iffrench {#3}\fi
+}
+% \ml{English}{Portuguese}{French}
+
+
+\firstname{\huge Zezinho} % Your first name
+\familyname{Da Silva} % Your last name
+
+
+\title{Curriculum Vitæ}
+\email{zezinhodasilva@email.com}
+
+\extrainfo{\emailsymbol zezinhodasilva@email2.com }
+\extrainfo{\centering \includegraphics[width=10pt]{pictures/GitHub-Mark-32px}
+  \httplink[Zezinho]{github.com/zezinho} \qquad\hspace{-2pt}
+	$ \bullet $  \hspace{3pt}
+	  \emailsymbol zezinhodasilva@email2.com }
+\mobile{+55~$\cdot$~21~$\cdot$~99999~$\cdot$~9999}
+%\phone{ }
+
+\homepage{site.do.zezinho}{site.do.zezinho}
+
+\photo[70pt][0pt]{pictures/photo.png}
+%\quote{"A witty and playful quotation" - John Smith}
+
+
+
+\begin{document}
+
+\makecvtitle
+
+% Sections Names
+\newcommand\seceducation{\ml{Education}{Educação}{Éducation}}
+\newcommand\secexperience{\ml{Experience}{Experiência}{Expérience}}
+\newcommand{\secIT}{\ml{IT Competences}{Competências Informáticas}{Compétences
+    Informatiques}}
+\newcommand{\seclanguages}{\ml{Languages}{Línguas}{Languages}}
+\newcommand{\secprizes}{\ml{Prizes}{Prêmios e distinção}{Prix et distinction}}
+\newcommand{\secinterests}{\ml{Interests}{Interesses}{Intérêts}}
+
+\vspace{-40pt}
+\section{\seceducation}
+
+\cventry{
+  \ml
+  {}
+  {abr. 2013\newline Presente\newline}
+  {avr. 2013\newline  Présent\newline}
+}
+{
+  \ml
+  {}
+  {Engenharia de Controle e Automação}
+  {Ingénierie de Contrôle et d'Automatismes}}
+{\newline Universidade Federal do Rio de Janeiro}
+{\ml{}{Rio de Janeiro - Brasil}{Rio de Janeiro - Brésil}}{}{}
+
+\section{\secexperience}
+
+\cventry{
+  \ml
+  {}
+  {jul. 2014 \newline juil. 2015\newline 13 meses\newline}
+  {juil. 2014 \newline juil. 2015\newline 13 mois\newline}}
+{
+  \ml
+  {}
+  {Monitoria}
+  {Tutorat}}
+{\newline Universidade Federal do Rio de Janeiro, UFRJ}
+{\newline
+  \ml
+  {}
+  {Rio de Janeiro - Brasil}
+  {Rio de Janeiro - Brésil}}
+{}
+{
+  \ml
+  {
+    \begin{itemize}
+    \item Circuits logiques:
+      \begin{itemize}
+      \item Algèbre de Boole, Machines de Mealy et de Moore.
+      \item Fonctions logiques combinatoires et séquentielles
+      \end{itemize}
+    \end{itemize}
+  }
+  {
+    \begin{itemize}
+    \item Circuitos lógicos:
+      \begin{itemize}
+      \item Algebra de Boole
+      \item Funções lógicas combinatórias e sequenciais
+      \item Máquinas de Mealy e de Moore.
+      \end{itemize}
+    \end{itemize}
+  }
+  {
+    \begin{itemize}
+    \item Circuits logiques:
+      \begin{itemize}
+      \item Algèbre de Boole, Machines de Mealy et de Moore.
+      \item Fonctions logiques combinatoires et séquentielles
+      \end{itemize}
+    \end{itemize}
+  }
+}
+
+%\vspace{40pt}
+\section{\secIT}
+
+\cvitem{
+  \ml
+  {Programming}
+  {Programação}
+  {Programmation}}
+{
+  C,
+  C++,
+  Java,
+  Python,
+  Matlab,
+  Wolfram Language,
+  \newline Fanuc's TP,
+  LADDER,
+  SQL,
+  Lisp,
+  C\#,
+  Assembly,
+  etc
+}
+
+\cvitem{
+  \ml
+  {Tools}
+  {Ferramentas}
+  {Outils}}
+{
+  Git,
+  Bash,
+  % Emacs,
+  % \LaTeX,
+  Tikz,
+  Simulink,
+  PowerFactory,
+  Step7,
+  ROS,
+  HTML,
+  SysML,
+  UML,
+  % XML,
+  ESTEREL'S SCADE,
+  Fanuc's Roboguide,
+  % SketchUp,
+  Trello,
+  Asana,
+  % Gimp,
+  % Photoshop
+  etc
+}
+
+
+\cvitem{
+  \ml
+  {Operating Systems}
+  {Sistemas Operacionais}
+  {Systèmes d'exploitation}}
+{
+  \ml
+  {Linux and Windows}
+  {Linux e Windows}
+  {Linux et Windows}
+}
+
+\section{\seclanguages}
+\newcommand{\raz}{\ml{}{Razoavelmente\hspace{1.2cm}}{Décemment\hspace{1.2cm}}}
+\newcommand{\bem}{\ml{}{Bem\hspace{2.4cm}}{Bien\hspace{2.4cm}}}
+\newcommand{\pouco}{\ml{}{Pouco\hspace{2.15cm}}{Peu\hspace{2.5cm}}}
+\newcommand{\nativo}{\ml{}{Nativo\hspace{2.05cm}}{Natif\hspace{2.31cm}}}
+
+% \cvitem{decente}{\raz \raz \raz \raz}{}
+\ml
+{}
+{
+  \cvitem{}{Compreende \hspace{1.1cm}Fala \hspace{2.35cm} Lê\hspace{2.7cm} Escreve }{}
+}
+{
+  \cvitem{}{Comprend \hspace{1.455cm}Parle \hspace{2.17cm} Lit\hspace{2.650cm} Écrit }{}
+}
+
+\cvitem{\ml{Portuguese}{Português}{Portugais}}{\nativo \nativo \nativo \nativo}{}
+
+\cvitem{\ml{French}{Francês}{Français}}{\bem \bem \bem \raz}{}
+
+\cvitem{\ml{German}{Alemão}{Allemand}}{\pouco \pouco \pouco \pouco}{}
+
+\cvitem{\ml{English}{Inglês}{Anglais}}{\bem \bem \bem \bem}{}
+
+% \section{\secprizes}
+
+% \cvitem{
+%   \ml
+%   {}
+%   {M. Honrosa}
+%   {M. Honorable}}
+% {
+%   \ml
+%   {}
+%   {Olimpíadas Brasileiras de Matemática para Escolas Públicas - OBMEP}
+%   {Olympiades Brésiliennes des Mathematique des Écoles Publiques}}
+
+\section{\secinterests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{
+  \ml
+  {}
+  {Programação}
+  {Programmation}
+}
+{
+  % \ml
+  % {}
+  % {Criação de Jogos}
+  % {Création de Jeux Vidéo}
+    \ml
+  {Smart Grids}
+  {Smart Grids}
+  {Smart Grids}
+}
+
+\cvlistdoubleitem{
+  \ml
+  {}
+  {Automobilismo}
+  {Automobilisme}
+}
+{
+  \ml
+  {}
+  {Aeronáutica}
+  {Aéronautique}
+}
+
+\cvlistdoubleitem{
+  \ml
+  {}
+  {Robótica}
+  {Robotique}
+}
+{
+  \ml
+  {}
+  {Controle}
+  {Automatique}
+}
+
+\cvlistdoubleitem{
+  \ml
+  {}
+  {Controle de redes de distribuição}
+  {Régulation de Réseaux de Distribution}
+}
+{
+  \ml
+  {}
+  {Energias Renováveis}
+  {Énergies Renouvelables}
+}
+
+
+% \cvlistdoubleitem{
+%   \ml
+%   {}
+%   {Processamento de Sinais}
+%   {Traitement des Signaux}
+% }
+% {
+%   \ml
+%   {}
+%   {Prostéticos}
+%   {Appareils Prothétiques}
+% }
+
+% \cvlistdoubleitem{
+%   \ml
+%   {}
+%   {Acústica}
+%   {Acoustique}
+% }
+% {
+%   \ml
+%   {}
+%   {Eletrônica}
+%   {Électronique}
+% }
+
+
+\end{document}
